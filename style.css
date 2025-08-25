@@ -44,4 +44,54 @@ body {
     outline: 0;
     border: 0;
     background: #ebfffc;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
 }
+
+.search button img {
+    width: 16px;
+}
+
+.weather-icon {
+    margin-top: 30px;
+    width: 170px;
+}
+
+.weather h1 {
+    font-weight: 500;
+    font-size: 80px;
+}
+
+.weather h2 {
+    margin-top: -10px;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    align-items: center;
+    text-align: left;
+    display: flex;
+
+}
+
+.col img {
+    margin-right: 10px;
+    width: 40px;
+}
+
+.humidity, .wind {
+    margin-top: 6px;
+    font-size: 30px;
+}
+
