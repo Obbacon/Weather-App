@@ -2,6 +2,7 @@ const apiKey = "5b89ef6615d4c11a203d0556c88edad9";
 // const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const searchBox = document.querySelector(".search input");
+
 const searchBtn = document.querySelector(".search button");
 
 
@@ -22,4 +23,6 @@ searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value)
 })
 
-
+//window.addEventListener("DOMContentLoaded", () =>  {
+//    searchBox?.addEventListener('click', checkWeather(searchBox.value), false);
+//});
