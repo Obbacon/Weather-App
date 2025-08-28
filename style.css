@@ -6,41 +6,49 @@
 }
 
 body {
-    background: silver;
+    background: gainsboro;
 }
 
-.card{
-    background: linear-gradient(135deg, #00feba, #545454);
-    color: blanchedalmond;
+.mainSection{
+    background: linear-gradient(135deg, #1e2926, #545454);
+    color: rgb(204, 204, 204);
     width: 90%;
     text-align: center;
-    max-width: 470px;
-    border-radius: 20px;
+    max-width: 465px;
+    border-radius: 25px;
     margin: 100px auto 0;
     padding: 40px 35px;
 }
 
-.search {
+.invalid{
+    font-size: 12px;
+    display: none;
+    text-align: left;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.enterButton {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.search input{
+.enterButton input{
     font-size: 18px;
     margin-right: 16px;
     flex: 1;
-    border-radius: 30px;
+    border-radius: 20px;
     height: 60px;
     padding: 10px 25px;
     outline: 0;
     border: 0;
-    color: #555;
+    color: #060505;
     background: #ebfffc;
 }
 
-.search button{
+.enterButton button{
     outline: 0;
     border: 0;
     background: #ebfffc;
@@ -50,12 +58,16 @@ body {
     border-radius: 50%;
 }
 
-.search button img {
-    width: 16px;
+.enterButton button img {
+    width: 24px;
+}
+
+.weather{
+    display: none;
 }
 
 .weather-icon {
-    margin-top: 30px;
+    margin-top: 25px;
     width: 170px;
 }
 
@@ -65,12 +77,12 @@ body {
 }
 
 .weather h2 {
-    margin-top: -10px;
+    margin-top: -15px;
     font-weight: 400;
     font-size: 45px;
 }
 
-.details {
+.INFO {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,20 +90,19 @@ body {
     margin-top: 50px;
 }
 
-.col {
+.Column {
     align-items: center;
     text-align: left;
     display: flex;
 
 }
 
-.col img {
-    margin-right: 10px;
-    width: 40px;
+.Column img {
+    margin-right: 5px;
+    width: 50px;
 }
 
 .humidity, .wind {
-    margin-top: 6px;
+    margin-top: 10px;
     font-size: 30px;
 }
-
