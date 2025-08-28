@@ -35,12 +35,18 @@ async function checkWeather(nameOfCity) {
     else if(data.weather[0].main == "Drizzle"){
         weatherIcon.src = "images/drizzle.png";
     }
+    else if(data.weather[0].main == "Snow"){
+        weatherIcon.src = "images/snow.png";
+    }
+    else if(data.weather[0].main == "Thunderstorm"){
+        weatherIcon.src = "images/rain.png";
+    }
 
     document.querySelector(".weather").style.display = "block";
     document.querySelector(".invalid").style.display = "none";
     }
 
-    //console.log(data);
+    console.log(data);
 
 }
 
